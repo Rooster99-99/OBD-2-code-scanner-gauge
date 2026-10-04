@@ -43,20 +43,6 @@ It boots in **demo mode** with simulated data, so you can try every screen at yo
 
 **Moving lock:** above about 5 mph, settings changes and code clearing are disabled.
 
-## Look and branding (v0.2.0)
-
-The neon theme uses colors taken from the logo: magenta, cyan, electric blue, and orange on deep indigo. Big numbers glow, and the gauge bar fades from cyan through magenta to hot pink as it fills.
-
-**Change the boot logo:**
-1. Install Pillow once: `pip install pillow`
-2. From the project folder, run: `python3 tools/make_splash.py path/to/your_logo.png`
-3. Build and upload.
-
-Any size or shape works. The image is scaled to fill the 320x240 screen and cropped. Add `--offset 0.5` to keep the middle of the image, or `--offset 1.0` to keep the bottom or right side. The default (`0.0`) keeps the top, which suits square logos with the subject up high. Add `--preview check.png` to see the result before flashing.
-
-**Change the boot title:** edit `SPLASH_TITLE` in `src/config.h`.
-
-The previews in `assets/` show roughly how the splash and gauge screen look. They're approximate: the real screen uses the display's own fonts.
 
 ## Pairing a dongle
 
